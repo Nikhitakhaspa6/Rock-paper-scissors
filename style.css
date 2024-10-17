@@ -1,0 +1,44 @@
+body {
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.choices button {
+  border: none;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s;
+}
+
+.choices button:hover {
+  transform: scale(1.1);
+}
+
+.result-container h3 {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .choices button {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .fa-3x {
+    font-size: 1.8rem;
+  }
+}
